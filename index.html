@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>El Arca - Clínica Veterinaria</title>
+    <link rel="icon" type="image/png" href="assets/favicon-elarca.png">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+
+        <a href="#inicio" class="marca">
+            <img src="assets/logo-elarca.png" alt="Logo de El Arca">
+            <h1>El Arca</h1>
+        </a>
+
+        <div class="header-derecha">
+
+            <nav>
+                <a href="#servicios" data-i18n="nav_servicios">◉ Servicios</a>
+                <a href="#contacto" data-i18n="nav_contacto">☎ Hablemos</a>
+                <a href="#ubicacion" data-i18n="nav_ubicacion">⌖ Ubícanos</a>
+                <a href="#redes" data-i18n="nav_redes">♡ Síguenos</a>
+            </nav>
+
+            <!-- MENÚ HAMBURGUESA (IDIOMAS) -->
+            <div class="selector-idioma">
+
+                <!-- Casilla oculta: cuando está marcada, el menú se muestra (solo con CSS) -->
+                <input type="checkbox" id="chkMenu" class="chk-menu" aria-label="Cambiar idioma">
+
+                <!-- Las tres rayitas -->
+                <label for="chkMenu" class="hamburguesa" id="botonHamburguesa">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <!-- Lista de idiomas -->
+                <div class="menu-idiomas" id="menuIdiomas">
+                    <p class="titulo-menu" data-i18n="idioma_titulo">Cambiar idioma:</p>
+                    <button type="button" data-idioma="en">English</button>
+                    <button type="button" data-idioma="es">Español</button>
+                    <button type="button" data-idioma="fr">Français</button>
+                    <button type="button" data-idioma="zh">中文 (Mandarín)</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- INICIO -->
+    <section class="inicio" id="inicio">
+
+        <div class="texto">
+
+            <p class="pequeno" data-i18n="hero_etiqueta">CLÍNICA VETERINARIA CERCANA</p>
+
+            <h2 data-i18n="hero_titulo">Cuidamos a tus mejores amigos</h2>
+
+            <p data-i18n="hero_texto">Atención veterinaria cercana y profesional para acompañar cada etapa de la vida de tu mascota.</p>
+
+            <!-- BOTONES -->
+            <div class="botones">
+
+                <!-- Casilla oculta: al pulsar el botón se marca/desmarca y el CSS muestra u oculta el cuadrito -->
+                <input type="checkbox" id="chkNosotros" class="chk-nosotros" aria-label="Nosotros">
+
+                <label for="chkNosotros" class="boton boton-principal" data-i18n="nosotros_boton">🐾 Nosotros</label>
+
+                <a href="#contacto" class="boton boton-secundario" data-i18n="conocenos">Conócenos</a>
+
+                <!-- CUADRITO "NOSOTROS" -->
+                <div class="cuadro-nosotros">
+                    <label for="chkNosotros" class="cerrar-cuadro" aria-label="Cerrar">×</label>
+                    <h3 data-i18n="nosotros_cuadro_titulo">Nosotros</h3>
+                    <p data-i18n="nosotros_cuadro_texto1">Somos El Arca, una veterinaria en Pereira, Risaralda, dedicada al cuidado integral de tus mascotas en cada etapa de su vida.</p>
+                    <p data-i18n="nosotros_cuadro_texto2">Te acompañamos con consulta general, vacunación, cirugía y baño, con atención cercana y responsable de lunes a sábado, de 8:00 a.m. a 5:00 p.m.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- IMÁGENES -->
+        <div class="dashboard">
+            <img src="assets/perritoinyeccion.jpg" alt="Perro en consulta veterinaria">
+            <img src="assets/perritooperado.jpg" alt="Perro en procedimiento veterinario">
+            <img src="assets/perrito.jpg" alt="Perro veterinario">
+        </div>
+
+    </section>
+
+
+    <!-- SERVICIOS  -->
+    <section class="servicios" id="servicios">
+
+        <p class="pequeno" data-i18n="servicios_etiqueta">NUESTROS SERVICIOS</p>
+
+        <h2 data-i18n="servicios_titulo">Todo para el bienestar de tu mascota</h2>
+
+        <div class="lista-servicios">
+
+            <!-- CONSULTA GENERAL -->
+            <div class="servicio">
+                <div class="icono-servicio">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 2v2"/><path d="M5 2v2"/><path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"/><path d="M8 15a6 6 0 0 0 12 0v-3"/><circle cx="20" cy="10" r="2"/></svg>
+                </div>
+                <h3 data-i18n="consulta_titulo">Consulta general</h3>
+                <p data-i18n="consulta_texto">Orientación y revisión para acompañar su bienestar.</p>
+            </div>
+
+            <!-- VACUNACIÓN -->
+            <div class="servicio">
+                <div class="icono-servicio">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 2 4 4"/><path d="m17 7 3-3"/><path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5"/><path d="m9 11 4 4"/><path d="m5 19-3 3"/><path d="m14 4 6 6"/></svg>
+                </div>
+                <h3 data-i18n="vacunacion_titulo">Vacunación</h3>
+                <p data-i18n="vacunacion_texto">Acompañamiento para mantener al día sus cuidados.</p>
+            </div>
+
+            <!-- CIRUGÍA -->
+            <div class="servicio">
+                <div class="icono-servicio">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></svg>
+                </div>
+                <h3 data-i18n="cirugia_titulo">Cirugía</h3>
+                <p data-i18n="cirugia_texto">Atención programada con un enfoque responsable.</p>
+            </div>
+
+            <!-- BAÑO -->
+            <div class="servicio">
+                <div class="icono-servicio">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5"/><line x1="10" x2="8" y1="5" y2="7"/><line x1="2" x2="22" y1="12" y2="12"/><line x1="7" x2="7" y1="19" y2="21"/><line x1="17" x2="17" y1="19" y2="21"/></svg>
+                </div>
+                <h3 data-i18n="bano_titulo">Baño</h3>
+                <p data-i18n="bano_texto">Un momento de higiene y cuidado para tu mascota.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACTO -->
+    <section class="contacto" id="contacto">
+
+        <div class="contacto-texto">
+
+            <p class="pequeno" data-i18n="contacto_etiqueta">CONTACTO</p>
+
+            <h2 data-i18n="contacto_titulo">Estamos aquí para ayudarte</h2>
+
+            <p data-i18n="contacto_texto">Escríbenos o llámanos para conocer disponibilidad y resolver tus dudas.</p>
+
+        </div>
+
+        <!-- TARJETA DE CONTACTO -->
+        <div class="tarjeta-contacto">
+
+            <div class="info-contacto">
+
+                <div class="info">
+                    <div class="icono">☎</div>
+                    <h3 data-i18n="telefono">Teléfono</h3>
+                    <p>+57 3146172632</p>
+                </div>
+
+                <div class="info">
+                    <div class="icono">✉</div>
+                    <h3 data-i18n="correo">Correo</h3>
+                    <p>veterinaria.elarcacol@gmail.com</p>
+                </div>
+
+                <div class="info">
+                    <div class="icono">◷</div>
+                    <h3 data-i18n="horario">Horario</h3>
+                    <p data-i18n="horario_valor">Lun-Sáb: 8:00 a.m.-5:00 p.m.</p>
+                </div>
+
+            </div>
+
+            <!-- BOTÓN AGENDAR -->
+            <div class="botones">
+                <a href="https://calendar.app.google/PbfYBWtwpV3UaB9K9"
+                   target="_blank"
+                   class="boton boton-principal" data-i18n="agendar">📅 Agendar una cita</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- UBICACIÓN -->
+    <section class="ubicacion" id="ubicacion">
+
+        <div class="mapa">
+            <div class="marcador">⌖</div>
+        </div>
+
+        <div class="ubicacion-texto">
+
+            <p class="pequeno" data-i18n="ubicacion_etiqueta">UBICACIÓN</p>
+
+            <h2 data-i18n="ubicacion_titulo">Tu clínica amiga, cerca de ti</h2>
+
+            <div class="tarjeta-ubicacion">
+
+                <div class="direccion">
+
+                    <div class="icono">➤</div>
+
+                    <div>
+                        <h3>Veterinaria El Arca</h3>
+                        <p>Cra. 17B #98-17, Pereira, Risaralda</p>
+                    </div>
+
+                </div>
+
+                <!-- GOOGLE MAPS -->
+                <a href="https://www.google.com/maps/search/?api=1&query=Veterinaria+El+Arca+Cra.+17B+%2398-17+Pereira+Risaralda"
+                   target="_blank"
+                   class="boton-mapa" data-i18n="ver_mapa">↗ Ver en el mapa</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- REDES SOCIALES -->
+    <section class="redes" id="redes">
+
+        <p class="pequeno" data-i18n="redes_etiqueta">REDES SOCIALES</p>
+
+        <h2 data-i18n="redes_titulo">La comunidad de El Arca</h2>
+
+        <p data-i18n="redes_texto">Comparte con nosotros los momentos más tiernos de tus mejores amigos.</p>
+
+        <div class="lista-redes">
+
+            <!-- INSTAGRAM -->
+            <a href="https://www.instagram.com/veterinaria.elarcacol" target="_blank" class="red">
+                <span class="icono-red instagram">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </span>
+                Instagram
+            </a>
+
+            <!-- WHATSAPP -->
+            <a href="https://wa.me/573146172632" target="_blank" class="red">
+                <span class="icono-red whatsapp">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M9 8.5c0 3.6 2.9 6.5 6.5 6.5l1-1.6-2.2-1.1-.9.9c-.9-.4-1.7-1.2-2.1-2.1l.9-.9L10.1 7.9Z"/></svg>
+                </span>
+                WhatsApp
+            </a>
+
+            <!-- TIKTOK -->
+            <a href="https://www.tiktok.com/@vet.elarca.pei" target="_blank" class="red">
+                <span class="icono-red tiktok">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v11.5a3.6 3.6 0 1 1-3.6-3.6"/><path d="M14 3c.3 2.5 2 4.2 4.8 4.5"/></svg>
+                </span>
+                TikTok
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <h3>El Arca</h3>
+        <p data-i18n="pie">Cuidamos con amor</p>
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+
+    <!-- AVISO: aparece solo si js/script.js no se pudo cargar (se puede borrar cuando todo funcione) -->
+    <script>
+        if (typeof cambiarIdioma !== "function") {
+            alert("No se pudo cargar js/script.js.\nRevisa que exista la carpeta 'js' con el archivo 'script.js' dentro, junto a index.html.");
+        }
+    </script>
+
+</body>
+</html>
